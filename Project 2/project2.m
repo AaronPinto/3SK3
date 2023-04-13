@@ -41,8 +41,9 @@ disp(rmse);
 % lambda = 0.0001; % equal to lambda_op
 % 
 % % set maximum number of iterations
-% max_iter_range = 1e3:1e3:1e5;
+% max_iter_range = 3e2:1e2:3e4;
 % rmse_vals = zeros(3, length(max_iter_range));
+% N = size(pts_markers, 2); % number of markers
 % 
 % % initialize marker coordinates 1 of 3 ways
 % p_est_init_1 = repmat(squeeze(pts_markers(1, 1, :))', N, 1);
